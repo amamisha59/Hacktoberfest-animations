@@ -1,0 +1,27 @@
+.rotatingMovingAnimation {
+    animation: rotateAndMove 4s linear infinite;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgb(105, 105, 138); /* Blue */
+    text-align: center;
+    position: relative;
+    animation-delay: 0.5s; /* Delay the animation start */
+}
+
+@keyframes rotateAndMove {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(100px) rotate(90deg);
+    }
+    50% {
+        transform: translateX(0) rotate(180deg);
+    }
+    75% {
+        transform: translateX(-100px) rotate(270deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
+}
